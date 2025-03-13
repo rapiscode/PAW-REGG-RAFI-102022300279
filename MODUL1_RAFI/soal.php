@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // **********************  1  **************************  
     // Tangkap nilai nama yang ada pada form HTML
     // silakan taruh kode kalian di bawah
+
     $nama = $_POST["nama"];
     if (empty($nama)) {
         $namaErr = "Nama wajib diisi";
@@ -27,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nim = $_POST["nim"];
     if (empty($nim)) {
         $nimErr = "NIM wajib diisi";
+    } else if (!is_numeric($nim)) {
+        $error_nim = "NIM harus angka!";
     }
 }
     
