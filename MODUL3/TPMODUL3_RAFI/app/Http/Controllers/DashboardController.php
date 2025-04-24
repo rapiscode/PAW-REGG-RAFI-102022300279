@@ -18,7 +18,7 @@ class DashboardController extends Controller
         // - Tentukan $salam berdasarkan jam (pagi, siang, sore, malam)
         if ($waktu >= 5 && $waktu < 12) {
             $salam = "Selamat Pagi";
-        } elseif ($waktu >= 12 && $waktu < 15) {
+        } elseif ($waktu >= 12 && $waktu < 15) {    
             $salam = "Selamat Siang";
         } elseif ($waktu >= 15 && $waktu < 18) {
             $salam = "Selamat Sore";
